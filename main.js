@@ -1,5 +1,3 @@
-import * as Eta from "eta";
-
 import template from "./template";
 import { parseEDIText } from "./parseEDIText";
 

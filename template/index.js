@@ -1,5 +1,3 @@
-import * as Eta from "eta";
-
 import root from "./root";
 import tplNode from "./node";
 import tplSegment from "./segment";
