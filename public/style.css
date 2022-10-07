@@ -1,0 +1,80 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  padding: 36px 24px;
+  margin: 0;
+}
+
+header,
+footer {
+  position: fixed;
+  height: 24px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  background: lightgray;
+  z-index: 2;
+}
+
+header {
+  border-bottom: solid 1px;
+  top: 0;
+}
+
+footer {
+  border-top: solid 1px;
+  bottom: 0;
+}
+
+span.node-element {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+span.node-name {
+  background-color: lightgreen;
+}
+
+span.segment-name {
+  background-color: lightblue;
+  margin-left: 8px;
+}
+
+span.component-name {
+  background-color: lightgrey;
+}
+
+span.empty-true {
+  opacity: 0.4;
+}
+
+.tree {
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+
+.tree li {
+  display: block;
+  position: relative;
+}
+
+.tree ul {
+  margin-left: 40px;
+  padding-left: 0;
+}
+
+.tree summary {
+  cursor: pointer;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.tree summary.no-children {
+  display: block;
+  cursor: default;
+  margin-left: 24px;
+}

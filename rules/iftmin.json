@@ -1,0 +1,79 @@
+[
+    { "name": "DTM" },
+    { "name": "TSR" },
+    { "name": "CUX" },
+    { "name": "MOA" },
+    { "name": "FTX" },
+    { "name": "CNT" },
+    {
+      "name": "LOC",
+      "children": [{ "name": "DTM" }]
+    },
+    {
+      "name": "RFF",
+      "children": [{ "name": "DTM" }]
+    },
+    { "name": "CPI" },
+    {
+      "name": "TDT",
+      "children": [
+        {
+          "name": "LOC",
+          "children": [{ "name": "DTM" }]
+        }
+      ]
+    },
+    {
+      "name": "NAD",
+      "children": [
+        {
+          "name": "CTA",
+          "children": [{ "name": "COM" }]
+        },
+        { "name": "DOC" },
+        { "name": "RFF" },
+        {
+          "name": "TSR",
+          "children": [{ "name": "FTX" }]
+        }
+      ]
+    },
+    {
+      "name": "GID",
+      "children": [
+        { "name": "PIA" },
+        { "name": "FTX" },
+        { "name": "NAD" },
+        { "name": "MEA" },
+        { "name": "RFF" },
+        { "name": "PCI" },
+        {
+            "name": "SGP",
+            "children": [{ "name": "MEA" }]
+        },
+        {
+          "name": "DGS",
+          "children": [
+            { "name": "FTX" },
+            {
+              "name": "CTA",
+              "children": [{ "name": "COM" }]
+            },
+            { "name": "MEA" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EQD",
+      "children": [
+        { "name": "MEA" },
+        { "name": "DIM" },
+        { "name": "SEL" },
+        { "name": "TMP" },
+        { "name": "FTX" },
+        { "name": "RFF" },
+        { "name": "NAD" }
+      ]
+    }
+  ]

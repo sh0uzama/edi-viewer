@@ -1,0 +1,1 @@
+export default `<span class="node-element component-name empty-<%=!it%>"><%=it || '-'%></span>`;

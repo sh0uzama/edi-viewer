@@ -1,0 +1,96 @@
+[
+  { "name": "CTA" },
+  { "name": "COM" },
+  { "name": "DTM" },
+  { "name": "TSR" },
+  { "name": "FTX" },
+  { "name": "GDS" },
+  {
+    "name": "LOC",
+    "children": [{ "name": "DTM" }]
+  },
+  {
+    "name": "RFF",
+    "children": [{ "name": "DTM" }]
+  },
+  {
+    "name": "TCC",
+    "children": [{ "name": "LOC" }, { "name": "FTX" }, { "name": "CUX" }]
+  },
+  {
+    "name": "TDT",
+    "children": [
+      {
+        "name": "LOC",
+        "children": [{ "name": "DTM" }]
+      }
+    ]
+  },
+  {
+    "name": "NAD",
+    "children": [
+      {
+        "name": "CTA",
+        "children": [{ "name": "COM" }]
+      },
+      { "name": "RFF" },
+      {
+        "name": "CPI",
+        "children": [{ "name": "LOC" }]
+      }
+    ]
+  },
+  {
+    "name": "GID",
+    "children": [
+      { "name": "PIA" },
+      { "name": "FTX" },
+      { "name": "NAD" },
+      { "name": "MEA" },
+      { "name": "DIM" },
+      {
+        "name": "RFF",
+        "children": [{ "name": "DTM" }]
+      },
+      {
+        "name": "SGP",
+        "children": [{ "name": "MEA" }]
+      },
+      {
+        "name": "DGS",
+        "children": [
+          { "name": "FTX" },
+          {
+            "name": "CTA",
+            "children": [{ "name": "COM" }]
+          },
+          { "name": "MEA" },
+          {
+            "name": "SGP",
+            "children": [{ "name": "MEA" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EQD",
+    "children": [
+      { "name": "EQN" },
+      { "name": "TMD" },
+      { "name": "MEA" },
+      { "name": "DIM" },
+      { "name": "HAN" },
+      { "name": "TMP" },
+      { "name": "FTX" },
+      {
+        "name": "NAD",
+        "children": [{ "name": "DTM" }]
+      },
+      {
+        "name": "CTA",
+        "children": [{ "name": "COM" }]
+      }
+    ]
+  }
+]

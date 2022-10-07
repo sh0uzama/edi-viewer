@@ -1,0 +1,7 @@
+[
+  { "name": "UNB", "friendlyName": "Interchange Header" },
+  { "name": "BGM", "friendlyName": "Beginning of Message" },
+  { "name": "UNH", "friendlyName": "Message Header" },
+  { "name": "UNT", "friendlyName": "Message Trailer" },
+  { "name": "UNZ", "friendlyName": "Interchange Trailer" }
+]

@@ -1,0 +1,1 @@
+export default `<span class="node-element segment-name empty-<%=!it.name%>"><%=it.name || '-'%></span><% it.components.forEach(function(component) { %><%~ E.include('component', component) %><% }) %>`;
