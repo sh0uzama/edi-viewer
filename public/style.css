@@ -1,16 +1,24 @@
+:root {
+  --padding-top: 36px;
+}
+
 html {
   font-family: "Courier New", Courier, monospace;
+  height: 100%;
 }
 
 body {
-  padding: 36px 24px;
+  padding: var(--padding-top) 24px;
   margin: 0;
+  background-color: #1e1e1e;
+  min-height: calc(100% - (var(--padding-top) * 2));
 }
 
 header,
 footer {
   position: fixed;
   height: 24px;
+  line-height: 24px;
   width: 100%;
   left: 0;
   text-align: center;
@@ -77,4 +85,9 @@ span.empty-true {
   display: block;
   cursor: default;
   margin-left: 24px;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  color: white;
 }

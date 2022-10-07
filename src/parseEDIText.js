@@ -44,7 +44,13 @@ export function parseEDIText(text) {
   return result;
 
   function appendMessageRule(unhNode) {
-    const rulesToAdd = rules[unhNode.segments[1].name.toLowerCase()];
+    const ruleName = unhNode.segments[1].name.toLowerCase();
+    const rulesToAdd = rules[ruleName];
+    
+    if (!rulesToAdd) {
+      throw new Error(`No rule found for file of type ${ruleName}`);
+    }
+
     getReference(rootId).rule.children = [].concat(rules.base, rulesToAdd);
   }
 }
@@ -55,9 +61,7 @@ function findCurrent(node, row, parentNodeId) {
 
   while (!rule) {
     if (!parentRef.parentId) {
-      throw new Error(
-        `Node ${node.name} (row: ${row}) did not have any matching rule`
-      );
+      throw new Error(`Node ${node.name} (row: ${row}) did not have any matching rule`);
     }
 
     parentRef = getReference(parentRef.parentId);

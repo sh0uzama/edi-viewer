@@ -1,7 +1,7 @@
 {
-  "name": "vite-project",
+  "name": "edi-viewer",
   "private": true,
-  "version": "0.0.3",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^3.1.0"
-  },
-  "dependencies": {
-    "eta": "^1.12.3"
   }
 }
