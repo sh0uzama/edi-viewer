@@ -1,4 +1,5 @@
 [
+  { "name": "UNA", "friendlyName": "Syntax Header" },
   { "name": "UNB", "friendlyName": "Interchange Header" },
   { "name": "BGM", "friendlyName": "Beginning of Message" },
   { "name": "UNH", "friendlyName": "Message Header" },

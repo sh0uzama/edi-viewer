@@ -48,7 +48,7 @@ export function parseEDIText(text) {
     const rulesToAdd = rules[ruleName];
     
     if (!rulesToAdd) {
-      throw new Error(`No rule found for file of type ${ruleName}`);
+      throw new Error(`No rule found for file of type "${ruleName}"`);
     }
 
     getReference(rootId).rule.children = [].concat(rules.base, rulesToAdd);
@@ -61,7 +61,7 @@ function findCurrent(node, row, parentNodeId) {
 
   while (!rule) {
     if (!parentRef.parentId) {
-      throw new Error(`Node ${node.name} (row: ${row}) did not have any matching rule`);
+      throw new Error(`Node "${node.name}" (row: ${row}) did not have any matching rule`);
     }
 
     parentRef = getReference(parentRef.parentId);

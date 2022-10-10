@@ -9,6 +9,14 @@ const escapeRE = /\?(?!\?)/g;
 const questionMarkRE = /\?\?/g;
 
 export function parseRowAndCreateNode(row) {
+
+  // handle UNA header better, it is intended as syntax definition
+  if (row.startsWith("UNA")) {
+    const una = Node.createNode("UNA");
+    una.segments.push(new Segment(row.replace("UNA", "")));
+    return una;
+  }
+
   const textSegments = row.split(separators.segment);
   const node = Node.createNode(unescape(textSegments[0]));
 
