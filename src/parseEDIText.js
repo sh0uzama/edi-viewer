@@ -6,7 +6,9 @@ import { parseRowAndCreateNode } from "./parseRowAndCreateNode";
 export function parseEDIText(text) {
   reset();
 
-  const textRows = text.split(separators.row);
+  const textRows = text
+    .split(separators.row)
+    .filter((r) => !!(r.trim()));
 
   const result = Node.createNode("(ROOT)");
   const rootId = result.id;
@@ -18,7 +20,9 @@ export function parseEDIText(text) {
   var parentNodeId = result.id;
   var row = 0;
 
-  for (const textRow of textRows.filter((r) => !!r)) {
+  console.log("text rows", textRows);
+
+  for (const textRow of textRows) {
     row++;
     const node = parseRowAndCreateNode(textRow);
 
@@ -39,7 +43,7 @@ export function parseEDIText(text) {
     parentNodeId = node.id;
   }
 
-  console.log(result);
+  console.log("edi object", result);
 
   return result;
 
