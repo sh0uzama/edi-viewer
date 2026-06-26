@@ -4,5 +4,8 @@
   { "name": "BGM", "friendlyName": "Beginning of Message" },
   { "name": "UNH", "friendlyName": "Message Header" },
   { "name": "UNT", "friendlyName": "Message Trailer" },
-  { "name": "UNZ", "friendlyName": "Interchange Trailer" }
+  { "name": "UNZ", "friendlyName": "Interchange Trailer" },
+  { "name": "DOC", "friendlyName": "Documentation" },
+  { "name": "META", "friendlyName": "Meta" },
+  { "name": "SGP", "friendlyName": "SGP" }
 ]
